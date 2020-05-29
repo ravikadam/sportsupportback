@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mongodb
+  labels:
+    app: illuminecdp-mongodb
+spec:
+  volumes:
+  - name: illuminecdp-mongo-vol
+    persistentVolumeClaim:
+      claimName: illuminecdp-pvc
+  containers:
+  - image: mongo
+    name: containermongo
+    command:
+    - mongod
+    - "--bind_ip"
+    - "0.0.0.0"
+    ports:
+    - containerPort: 27017
+    volumeMounts:
+    - name: illuminecdp-mongo-vol
+      mountPath: /data/db

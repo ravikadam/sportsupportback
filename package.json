@@ -1,0 +1,10 @@
+{
+  "name": "sportsupportback",
+  "version": "1.0.0",
+  "description": "Project for Backend of Sport support",
+  "main": "index.js",
+  "repository": "https://github.com/ravikadam/sportsupportback.git",
+  "author": "Ravikadam <ravindrakad@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
