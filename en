@@ -1,0 +1,8 @@
+export MONGODB_URL=mongodb://localhost:27017/sportsupport
+export NODE_ENV=development
+export JWT_SECRET=thisIsMySecretKeyForJWT*@.[123
+export SMTP_HOST=localhost
+export SMTP_PORT=25
+export SMTP_USERNAME=abc
+export SMTP_PASSWORD=abc
+export PORT=3000
